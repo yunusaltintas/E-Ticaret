@@ -7,34 +7,39 @@
     <div class="row mt-1">
         <a asp-action="AddProduct" asp-controller="Product" asp-area="Admin" class="btn btn-primary">Add Product</a>
     </div>
-    
+
 
     @if (Model.success == true)
     {
-        <div class=" container float-left">
-            <table class="table table-sm table-bordered table-hover mt-3">
+
+        <table class="table table-sm table-bordered table-hover mt-3">
+            <tr>
+                <th>Id</th>
+                <th>Product Name</th>
+                <th>Pic</th>
+                <th>Category Name</th>
+                <th>Price</th>
+            </tr>
+            @foreach (var item in Model.Model)
+            {
                 <tr>
-                    <th>Id</th>
-                    <th>Product Name</th>
-                    <th>Pic</th>
-                    <th>Category Name</th>
-                    <th>Price</th>
+                    <td>@item.Id</td>
+                    <td>@item.ProductName</td>
+                    <td>@item.FilePic</td>
+                    <td>@item.Categories.CategoryName</td>
+                    <td>@item.Price</td>
+                    <td>
+                        <a asp-action="DeleteProduct" asp-controller="Product" asp-area="Admin" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                        <a asp-action="UpdateProduct" asp-controller="Product" asp-area="Admin" asp-route-id="@item.Id" class="btn btn-warning">Update</a>
+                    </td>
+
                 </tr>
-                @foreach (var item in Model.Model)
-                {
-                    <tr>
-                        <td>@item.Id</td>
-                        <td>@item.ProductName</td>
-                        <td>@item.FilePic</td>
-                        <td>@item.Categories.CategoryName</td>
-                        <td>@item.Price</td>
-                    </tr>
-                }
+            }
 
-            </table>
+        </table>
 
-        </div>
-        
+
+
 
     }
 

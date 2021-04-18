@@ -49,6 +49,17 @@ namespace Ticaret.Service
             return new ReturnModel();
         }
 
+        public async Task<ReturnModel> DeleteProductAsync(int id)
+        {
+            //var result = _productRepository.TGetByIdAsync(id);
+           bool done= await _productRepository.TRemoveAsync(id);
+            if (done==true)
+            {
+                return new ReturnModel();
+            }
+            return new ReturnModel("hatavar");
+        }
+
         public async Task<ReturnParameterModel<List<Product>>> GetAllProductAsync()
         {
             var result = await _productRepository.TGetAllAsync();
@@ -75,6 +86,31 @@ namespace Ticaret.Service
         {
             var result = await _productRepository.TQuery().Include(x => x.Categories).ToListAsync();
             return new ReturnParameterModel<List<Product>>(result);
+        }
+
+        public async Task<ReturnParameterModel<Product>> UpdateProduct(UpdateProductViewModel updateProductViewModel)
+        {
+
+            var güncelenecek = await _productRepository.TGetByIdAsync(updateProductViewModel.Id);
+
+           
+            if (updateProductViewModel.FilePic != null)
+            {
+                var path = Path.GetExtension(updateProductViewModel.FilePic.FileName);
+                var NewPicName = Guid.NewGuid() + path;
+                var SourcePic = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/" + NewPicName);
+
+                var stream = new FileStream(SourcePic, FileMode.Create);
+                updateProductViewModel.FilePic.CopyTo(stream);
+
+                güncelenecek.FilePic = NewPicName;
+            }
+            güncelenecek.Id = updateProductViewModel.Id;
+            güncelenecek.ProductName = updateProductViewModel.ProductName;
+            güncelenecek.Price = updateProductViewModel.Price;
+
+            await _productRepository.TUpdateAsync(güncelenecek);
+            return new ReturnParameterModel<Product>(güncelenecek);
         }
     }
 }

@@ -12,3 +12,17 @@ C:\Users\yunus\source\repos\Ticaret\Ticaret.Service\bin\Debug\netcoreapp3.1\Tica
 C:\Users\yunus\source\repos\Ticaret\Ticaret.Service\bin\Debug\netcoreapp3.1\Ticaret.Data.pdb
 C:\Users\yunus\source\repos\Ticaret\Ticaret.Service\bin\Debug\netcoreapp3.1\Ticaret.Repository.pdb
 C:\Users\yunus\source\repos\Ticaret\Ticaret.Service\obj\Debug\netcoreapp3.1\Ticaret.Service.csproj.CopyComplete
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Service\bin\Debug\netcoreapp3.1\Ticaret.Service.deps.json
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Service\bin\Debug\netcoreapp3.1\Ticaret.Service.dll
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Service\bin\Debug\netcoreapp3.1\Ticaret.Service.pdb
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Service\bin\Debug\netcoreapp3.1\Ticaret.Data.dll
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Service\bin\Debug\netcoreapp3.1\Ticaret.Repository.dll
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Service\bin\Debug\netcoreapp3.1\Ticaret.Data.pdb
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Service\bin\Debug\netcoreapp3.1\Ticaret.Repository.pdb
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Service\obj\Debug\netcoreapp3.1\Ticaret.Service.csprojAssemblyReference.cache
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Service\obj\Debug\netcoreapp3.1\Ticaret.Service.AssemblyInfoInputs.cache
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Service\obj\Debug\netcoreapp3.1\Ticaret.Service.AssemblyInfo.cs
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Service\obj\Debug\netcoreapp3.1\Ticaret.Service.csproj.CoreCompileInputs.cache
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Service\obj\Debug\netcoreapp3.1\Ticaret.Service.csproj.CopyComplete
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Service\obj\Debug\netcoreapp3.1\Ticaret.Service.dll
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Service\obj\Debug\netcoreapp3.1\Ticaret.Service.pdb

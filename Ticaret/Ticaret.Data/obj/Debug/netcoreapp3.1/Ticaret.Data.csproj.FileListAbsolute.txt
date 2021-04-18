@@ -10,3 +10,15 @@ C:\Users\yunus\source\repos\Ticaret\Ticaret.Data\obj\Debug\netcoreapp3.1\Ticaret
 C:\Users\yunus\source\repos\Ticaret\Ticaret.Data\obj\Debug\netcoreapp3.1\Ticaret.Data.dll
 C:\Users\yunus\source\repos\Ticaret\Ticaret.Data\obj\Debug\netcoreapp3.1\Ticaret.Data.pdb
 C:\Users\yunus\source\repos\Ticaret\Ticaret.Data\obj\Debug\netcoreapp3.1\Ticaret.Data.genruntimeconfig.cache
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Data\obj\Debug\netcoreapp3.1\Ticaret.Data.csprojAssemblyReference.cache
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Data\obj\Debug\netcoreapp3.1\Ticaret.Data.AssemblyInfoInputs.cache
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Data\obj\Debug\netcoreapp3.1\Ticaret.Data.AssemblyInfo.cs
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Data\obj\Debug\netcoreapp3.1\Ticaret.Data.csproj.CoreCompileInputs.cache
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Data\obj\Debug\netcoreapp3.1\Ticaret.Data.dll
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Data\obj\Debug\netcoreapp3.1\Ticaret.Data.pdb
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Data\bin\Debug\netcoreapp3.1\Ticaret.Data.deps.json
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Data\bin\Debug\netcoreapp3.1\Ticaret.Data.runtimeconfig.json
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Data\bin\Debug\netcoreapp3.1\Ticaret.Data.runtimeconfig.dev.json
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Data\bin\Debug\netcoreapp3.1\Ticaret.Data.dll
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Data\bin\Debug\netcoreapp3.1\Ticaret.Data.pdb
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret.Data\obj\Debug\netcoreapp3.1\Ticaret.Data.genruntimeconfig.cache
