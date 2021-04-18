@@ -1,0 +1,12 @@
+C:\Users\yunus\source\repos\Ticaret\Ticaret.Repository\bin\Debug\netcoreapp3.1\Ticaret.Repository.deps.json
+C:\Users\yunus\source\repos\Ticaret\Ticaret.Repository\bin\Debug\netcoreapp3.1\Ticaret.Repository.dll
+C:\Users\yunus\source\repos\Ticaret\Ticaret.Repository\bin\Debug\netcoreapp3.1\Ticaret.Repository.pdb
+C:\Users\yunus\source\repos\Ticaret\Ticaret.Repository\bin\Debug\netcoreapp3.1\Ticaret.Data.dll
+C:\Users\yunus\source\repos\Ticaret\Ticaret.Repository\bin\Debug\netcoreapp3.1\Ticaret.Data.pdb
+C:\Users\yunus\source\repos\Ticaret\Ticaret.Repository\obj\Debug\netcoreapp3.1\Ticaret.Repository.csprojAssemblyReference.cache
+C:\Users\yunus\source\repos\Ticaret\Ticaret.Repository\obj\Debug\netcoreapp3.1\Ticaret.Repository.AssemblyInfoInputs.cache
+C:\Users\yunus\source\repos\Ticaret\Ticaret.Repository\obj\Debug\netcoreapp3.1\Ticaret.Repository.AssemblyInfo.cs
+C:\Users\yunus\source\repos\Ticaret\Ticaret.Repository\obj\Debug\netcoreapp3.1\Ticaret.Repository.csproj.CoreCompileInputs.cache
+C:\Users\yunus\source\repos\Ticaret\Ticaret.Repository\obj\Debug\netcoreapp3.1\Ticaret.Repository.csproj.CopyComplete
+C:\Users\yunus\source\repos\Ticaret\Ticaret.Repository\obj\Debug\netcoreapp3.1\Ticaret.Repository.dll
+C:\Users\yunus\source\repos\Ticaret\Ticaret.Repository\obj\Debug\netcoreapp3.1\Ticaret.Repository.pdb

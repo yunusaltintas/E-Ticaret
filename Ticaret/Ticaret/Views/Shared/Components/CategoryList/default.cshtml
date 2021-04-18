@@ -1,0 +1,28 @@
+﻿@model Ticaret.Data.ResponseModel.ReturnParameterModel<List<Ticaret.Data.Entities.Category>>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+
+    @if (Model.success == true)
+    {
+        <div class="list-group">
+            @foreach (var item in Model.Model)
+            {
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    @item.CategoryName
+                </a>
+            }
+
+            @*<a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>*@
+        </div>
+    }
+
+</body>
+</html>

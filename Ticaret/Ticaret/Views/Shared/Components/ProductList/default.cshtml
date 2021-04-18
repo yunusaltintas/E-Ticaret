@@ -1,0 +1,39 @@
+﻿@model Ticaret.Data.ResponseModel.ReturnParameterModel<List<Ticaret.Data.Entities.Product>>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div class="row">
+
+        @if (Model.success == true)
+        {
+
+            @foreach (var item in Model.Model)
+            {
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="/img/@item.FilePic" class="card-img-top" alt="Resim Yok" width="30" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.ProductName</h5>
+                            <p class="card-text">₺@item.Price</p>
+                            <p>@item.Categories.CategoryName</p>
+
+                            <a asp-action="GetProductDetail" asp-controller="Home" asp-route-id="@item.Id" class="btn btn-primary float-right">Details</a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        }
+
+
+
+    </div>
+
+</body>
+</html>

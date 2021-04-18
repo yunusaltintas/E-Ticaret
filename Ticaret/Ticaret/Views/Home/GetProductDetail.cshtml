@@ -1,0 +1,39 @@
+﻿@model Ticaret.Data.ResponseModel.ReturnParameterModel<Ticaret.Data.Entities.Product>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetProductDetailAsync</title>
+</head>
+<body>
+    @if (Model.success == true)
+    {
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <img src="" class="w-100 img-thumbnail" alt="@Model.Model.ProductName" />
+                </div>
+
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>@Model.Model.ProductName</h5>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">@Model.Model.ProductName</h5>
+                            <p class="card-text">@Model.Model.Price</p>
+                            <a href="#" class="btn btn-primary float-right ml-1">Add</a>
+                            <a asp-action="Index" asp-controller="Home" class="btn btn-danger float-right">Back</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    }
+
+</body>
+</html>
