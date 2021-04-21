@@ -7,7 +7,7 @@ using Ticaret.Service;
 
 namespace Ticaret.ViewComponents
 {
-    public class ProductList: ViewComponent
+    public class ProductList : ViewComponent
     {
         private readonly IProductService _productService;
 
@@ -16,10 +16,14 @@ namespace Ticaret.ViewComponents
             _productService = productService;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync(int? categoryId)
         {
-
-            var result = await _productService.GetAllProductAsync();  
+            if (categoryId.HasValue)
+            {
+                var productbycategory=await _productService.GetProductWithCategoryId((int)categoryId);
+                return View(productbycategory);
+            }
+            var result = await _productService.GetAllProductAsync();
             return View(result);
         }
     }

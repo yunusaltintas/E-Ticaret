@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Ticaret.Data.Entities;
 using Ticaret.Data.ViewModels;
 using Ticaret.Service;
 
@@ -14,10 +16,12 @@ namespace Ticaret.Areas.Admin.Controllers
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
+        private readonly ICategoryService _categoryService;
 
-        public ProductController(IProductService productService)
+        public ProductController(IProductService productService, ICategoryService categoryService)
         {
             _productService = productService;
+            _categoryService = categoryService;
         }
         [HttpGet]
         public async Task<IActionResult> IndexAsync()
@@ -28,24 +32,31 @@ namespace Ticaret.Areas.Admin.Controllers
             return View(result);
         }
         [HttpGet]
-        public IActionResult AddProduct()
+        public async Task<IActionResult> AddProductAsync()
         {
+            var result = await _categoryService.GetAllCategoryAsync();
+            var categories = result.Model;
+
+            ViewBag.categories = new SelectList(categories, "Id", "CategoryName");
 
             return View();
         }
         [HttpPost]
-        public IActionResult AddProduct(AddProductViewModel addProductViewModel)
+        public async Task<IActionResult> AddProductAsync(AddProductViewModel addProductViewModel)
         {
             if (!ModelState.IsValid)
             {
+                var result = await _categoryService.GetAllCategoryAsync();
+                var categories = result.Model;
+                ViewBag.categories = new SelectList(categories, "Id", "CategoryName");
+
                 return View(addProductViewModel);
             }
 
-            _productService.AddProduct(addProductViewModel);
+            await _productService.AddProduct(addProductViewModel);
 
             return RedirectToAction("Index", "Product", new { area = "Admin" });
         }
-
         [HttpGet]
         public async Task<IActionResult> UpdateProduct(int id)
         {
@@ -53,14 +64,13 @@ namespace Ticaret.Areas.Admin.Controllers
             UpdateProductViewModel updateProductViewModel = new UpdateProductViewModel
             {
                 ProductName = result.Model.ProductName,
-                CategoryId=result.Model.CategoryId,
-                Price=result.Model.Price,
+                CategoryId = result.Model.CategoryId,
+                Price = result.Model.Price,
 
             };
 
             return View(updateProductViewModel);
         }
-
         [HttpPost]
         public async Task<IActionResult> UpdateProduct(UpdateProductViewModel updateProductViewModel)
         {
@@ -74,11 +84,10 @@ namespace Ticaret.Areas.Admin.Controllers
 
             return RedirectToAction("Index", "Product", new { area = "Admin" });
         }
-
         [HttpGet]
         public async Task<IActionResult> DeleteProductAsync(int id)
         {
-            var result=await _productService.DeleteProductAsync(id);
+            var result = await _productService.DeleteProductAsync(id);
             return RedirectToAction("Index", "Product", new { area = "Admin" });
         }
 

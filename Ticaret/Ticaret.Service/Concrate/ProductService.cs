@@ -42,7 +42,7 @@ namespace Ticaret.Service
             }
 
             var result=await _productRepository.TAddAsync(NewProduct);
-            if (result==null)
+            if (result.Id==0)
             {
                 return new ReturnModel("hatavar");
             }
@@ -75,7 +75,7 @@ namespace Ticaret.Service
         public async Task<ReturnParameterModel<Product>> GetProductByIdAsync(int id)
         {
             var result = await _productRepository.TGetByIdAsync(id);
-            if (result.Id == 0)
+            if (result == null)
             {
                 return new ReturnParameterModel<Product>("hata var");
             }
@@ -84,8 +84,15 @@ namespace Ticaret.Service
 
         public async Task<ReturnParameterModel<List<Product>>> GetProductWithCategory()
         {
-            var result = await _productRepository.TQuery().Include(x => x.Categories).ToListAsync();
+            var result = await _productRepository.TQueryOrderLedder().Include(x => x.Categories).ToListAsync();
             return new ReturnParameterModel<List<Product>>(result);
+        }
+
+        public async Task<ReturnParameterModel<List<Product>>> GetProductWithCategoryId(int id)
+        {
+            var result= await _productRepository.TGetProductByCategoryId(id);
+            return new ReturnParameterModel<List<Product>>(result);
+
         }
 
         public async Task<ReturnParameterModel<Product>> UpdateProduct(UpdateProductViewModel updateProductViewModel)

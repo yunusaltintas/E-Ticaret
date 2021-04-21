@@ -22,10 +22,14 @@ namespace Ticaret.Repository
             _dbProduct = _context.Set<Product>();
         }
 
-        public Task<Category> GetCategoryById(int id)
+        public async Task<List<Product>> TGetProductByCategoryId(int id)
         {
-
-            return null;
+            var result = await _dbProduct.Where(x => x.Categories.Id == id).ToListAsync();
+            return result;
+        }
+        public IQueryable<Product> TQueryOrderLedder()
+        {
+            return _dbProduct.AsQueryable().OrderBy(x=>x.ProductName);
         }
     }
 }

@@ -893,3 +893,13 @@ C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret\obj\Debug\net5.0\Tica
 C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret\obj\Debug\net5.0\Ticaret.Views.pdb
 C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret\obj\Debug\net5.0\Ticaret.csproj.CopyComplete
 C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret\obj\Debug\net5.0\Ticaret.genruntimeconfig.cache
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\AddCategory.cshtml.g.cs
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\UpdateCategory.cshtml.g.cs
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret\obj\Debug\net5.0\Razor\Views\Home\NotFound.cshtml.g.cs
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret\obj\Debug\net5.0\Razor\Views\Home\Error.cshtml.g.cs
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret\bin\Debug\net5.0\NLog.dll
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret\bin\Debug\net5.0\NLog.config
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret\bin\Debug\net5.0\NLog.Web.AspNetCore.dll
+C:\Users\yunus\source\repos\GİT\E-Ticaret\Ticaret\Ticaret\obj\Debug\net5.0\Razor\Views\Home\ForgetPassword.cshtml.g.cs

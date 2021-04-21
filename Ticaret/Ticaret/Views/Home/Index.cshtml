@@ -9,7 +9,7 @@
             @await Component.InvokeAsync("CategoryList")
         </div>
         <div class="col-md-9">
-            @await Component.InvokeAsync("ProductList")
+            @await Component.InvokeAsync("ProductList", new { categoryId = ViewBag.CategoryId })
         </div>
 
     </div>

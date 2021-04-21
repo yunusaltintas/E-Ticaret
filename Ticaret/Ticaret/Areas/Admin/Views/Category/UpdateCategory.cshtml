@@ -1,0 +1,25 @@
+﻿@model Ticaret.Data.ViewModels.UpdateCategoryViewModel
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <form asp-action="UpdateCategory" asp-controller="Category" asp-area="Admin" method="post" class="w-75 mx-auto p-3" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <label>Product Name:</label>
+            <input asp-for="CategoryName" type="text" placeholder="Product Name" class="form-control" />
+            <span asp-validation-for="CategoryName" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+
+            <button type="submit" class=" btn btn-primary">Save</button>
+        </div>
+
+
+
+    </form>
+
+</body>
+</html>

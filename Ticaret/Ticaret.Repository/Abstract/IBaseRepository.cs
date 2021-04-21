@@ -8,7 +8,7 @@ using Ticaret.Data.Entities;
 
 namespace Ticaret.Repository
 {
-    public interface ICategoryRepository<T> where T: BaseEntity
+    public interface IBaseRepository<T> where T: BaseEntity
     {
         Task<T> TAddAsync(T Entity);
         Task<bool> TRemoveAsync(int id);

@@ -19,7 +19,7 @@ namespace Ticaret.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var result=await _categoryService.GetAllCategoryAsync();
+            var result=await _categoryService.GetAllCategoryOrderLetterAsync();
             return View(result);
         }
     }

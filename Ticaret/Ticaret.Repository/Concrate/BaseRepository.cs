@@ -9,7 +9,7 @@ using Ticaret.Data.Entities;
 
 namespace Ticaret.Repository
 {
-    public class BaseRepository<T> : ICategoryRepository<T> where T : BaseEntity
+    public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {
         private readonly TicaretDbContext _context;
         private readonly DbSet<T> _db;
@@ -39,7 +39,7 @@ namespace Ticaret.Repository
 
         public async Task<List<T>> TGetAllAsync()
         {
-            return await _db.ToListAsync();
+            return await _db.OrderByDescending(x=>x.Id).ToListAsync();
         }
 
         public async Task<T> TGetByIdAsync(int id)

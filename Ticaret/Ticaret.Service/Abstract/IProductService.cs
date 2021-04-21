@@ -14,10 +14,9 @@ namespace Ticaret.Service
         Task<ReturnParameterModel<Product>> GetProductByIdAsync(int id);
         Task<ReturnParameterModel<List<Product>>> GetProductWithCategory();
         Task<ReturnModel> AddProduct(AddProductViewModel addProductViewModel);
-
         Task<ReturnParameterModel<Product>> UpdateProduct(UpdateProductViewModel updateProductViewModel);
-
         Task<ReturnModel> DeleteProductAsync(int id);
+        Task<ReturnParameterModel<List<Product>>> GetProductWithCategoryId(int id);
 
     }
 }

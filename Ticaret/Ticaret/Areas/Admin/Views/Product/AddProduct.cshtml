@@ -11,10 +11,12 @@
             <input asp-for="ProductName" type="text" placeholder="Product Name" class="form-control" />
             <span asp-validation-for="ProductName" class="text-danger"></span>
         </div>
+
         <div class="form-group">
-            <label>Category Id:</label>
-            <input asp-for="CategoryId" type="text" placeholder="CategoryId " class="form-control" />
-          
+            <label>Category Name:</label>
+            <select asp-for="CategoryId" asp-items="@ViewBag.categories" class="form-control">
+                <option>Please select one</option>
+            </select>
         </div>
 
         <div class="form-group">

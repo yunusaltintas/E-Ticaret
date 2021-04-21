@@ -1,0 +1,42 @@
+﻿@model Ticaret.Data.ResponseModel.ReturnParameterModel<List<Ticaret.Data.Entities.Category>>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div class="row mt-1">
+        <a asp-action="AddCategory" asp-controller="Category" asp-area="Admin" class="btn btn-primary">Add Category</a>
+    </div>
+
+
+    @if (Model.success == true)
+    {
+
+        <table class="table table-sm table-bordered table-hover mt-3">
+            <tr>
+                <th>Id</th>
+                <th>Category Name</th>
+                <th>Transactions</th>
+            </tr>
+            @foreach (var item in Model.Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.CategoryName</td>
+                    <td>
+                        <a asp-action="DeleteCategory" asp-controller="Category" asp-area="Admin" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                        <a asp-action="UpdateCategory" asp-controller="Category" asp-area="Admin" asp-route-id="@item.Id" class="btn btn-warning">Update</a>
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+
+
+
+
+    }
+
+</body>
+</html>
