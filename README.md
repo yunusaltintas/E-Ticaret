@@ -18,3 +18,4 @@ Kullanılan Teknolojiler:
 * Boostrap
 * Nlog
 * Global Exception Handler
+* Ürün Resmi Ekleme
