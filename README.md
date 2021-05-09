@@ -14,7 +14,7 @@ Kullanılan Teknolojiler:
 * Admin Area
 * Fluent Validation
 * Partial View
-* Response 
+* Response Return Model
 * Boostrap
 * Nlog
 * Global Exception Handler
